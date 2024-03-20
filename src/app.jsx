@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./index.css"; // Importar el archivo CSS donde definiremos el estilo
 
 function App() {
   const [books, setBooks] = useState(undefined);
@@ -9,8 +10,8 @@ function App() {
         id: 1,
         title: "Introduction to Algorithms",
         authors: [
-          "Thomas H. Cormen",
-          "Charles E. Leiserson",
+          "Thomas H. Cormen,",
+          "Charles E. Leiserson,",
           "Ronald L. Rivest y Clifford Stein",
         ],
         editorial: "MIT Press",
@@ -41,7 +42,18 @@ function App() {
       <button onClick={handleClick}>Populate books variable</button>
       <button onClick={() => setBooks(undefined)}>Remove books variable</button>
 
-      {/* Write your code here */}
+      {}
+      {books && (
+        <ul>
+          {books.map((book) => (
+            <li key={book.id}>
+              <h2>{book.title}</h2>
+              <p>Autores: {book.authors.join(", ")}</p>
+              <img src={book.cover} alt={book.title} />
+            </li>
+          ))}
+        </ul>
+      )}
     </>
   );
 }

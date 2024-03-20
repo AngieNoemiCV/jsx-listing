@@ -1,0 +1,48 @@
+/* Estilos para los botones */
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: #ff69b4;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+/* Estilos para la lista de libros */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8ff;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #ff69b4;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #4b0082;
+}
+
+img {
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
